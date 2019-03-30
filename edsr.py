@@ -47,7 +47,7 @@ class EDSR(nn.Module):
 
 
 if __name__=="__main__":
-    net = EDSR(32, 256, 2)
+    net = EDSR(32, 256, 4)
     net.cuda()
     lr = torch.rand(4,3,64,64).cuda()
     print(lr.shape)
